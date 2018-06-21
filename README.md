@@ -31,7 +31,7 @@ Must run bridge to start using the kinect2 for anything.
 rosrun rgb_view_node rgb_view_node.py
 ```
 
-Saves image data into a bag which can be accessed later.
+Saves image data into a bag which can be accessed later. If you have created a package node with different names then you need to run yours.
 
 3. Change publish speed of any topic
 
