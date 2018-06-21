@@ -1,11 +1,5 @@
 #!/usr/bin/env python
 
-# Python libs
-import sys
-import time
-import threading
-import subprocess
-
 # numpy and scipy
 import numpy as np
 from scipy.ndimage import filters
@@ -21,8 +15,6 @@ import rosbag
 
 # Ros Messages
 from sensor_msgs.msg import Image
-
-
 
 # We do not use cv_bridge it does not support CompressedImage in python
 # from cv_bridge import CvBridge, CvBridgeError

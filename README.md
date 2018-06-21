@@ -2,6 +2,11 @@
 
 This repository contains Aperture Engineering's UTS MMD spring Autumn 2018 software.
 
+Depends:
+- Ubuntu (we used 16.06)
+- ROS Indigo or later (we used Kinetic)
+- IAI Kinect2: https://github.com/code-iai/iai_kinect2
+
 ## Notes
 - Put `source /home/user/catkin_ws/devel/setup.bash` in your bashrc, replacing 'user' with urs.
 - Remember to run `catkin_make -DCMAKE_BUILD_TYPE=Release` after any structural changes to the workspace
@@ -64,7 +69,7 @@ and
 ## Adding a new node package
 
 1. You can add a new node to the catkin_ws package by following the ros website instructions on creating a package. 
-2. Add a folder called 'scripts' in the package folder and save the publisher or subscriber code you create for running the node in it. An example of simple subscriber is our rgb_view_node.py in **rgb_view_node/scripts**.
+2. Add a folder called 'scripts' in the package folder and save the publisher or subscriber code you create for running the node in it. An example of simple subscriber that (saves image data from a topic in a rosbag) is our rgb_view_node.py in **rgb_view_node/scripts**.
 3. Navigate to **src/iai_kinect2/iai_kinect2** and open package.xml in gedit. Add the run depend for the new package like `<run_depend>Name_of_package</run_depend>` and save.
 4. Run `catkin make` to build the new workspace.
 
