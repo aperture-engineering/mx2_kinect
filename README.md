@@ -1,4 +1,4 @@
-#Aperture Engineering Kinect2 Camera project
+# Aperture Engineering Kinect2 Camera project
 
 ## Notes
 - Put `source /home/user/catkin_ws/devel/setup.bash` in your bashrc, replacing 'user' with urs.
@@ -47,21 +47,23 @@ If changing `image_throttle` to something else, make sure to change it in 'rgb_v
 
 If not calibrating the camera, copy the calibration files from one of the other folders into it. The calibration won't be as good though.
 
-2.  **Create a new launch file**
+2.  **Create new bridge launch files for multiple kinects**
 
-- go to '/catkin_ws/src/iai_kinect2/kinect2_bridge/data/<serial-number>' and duplicate one of the current launch files and change the serial number to the serial you want to add.
+- go to '/catkin_ws/src/iai_kinect2/kinect2_bridge/launch' and duplicate one of the current launch files and append the name with the new kinect's serial number e.g. "kinect2_bridge_<serial-number>.launch"
 
-- Open the file and change the <serial-number> in:
+- Open the file and change the <serial-number> to the new one at:
 
 <arg name="base_name"         default="kinect2_<serial-number>"/>
 and 
 <arg name="sensor"            default="<serial-number>"/>
 
+- You may now run the new bridge using the instructions in 'starting an image stream'
 
+## Adding a new node package
 
-
-
-
-
+1. You can add a new node to the catkin_ws package by following the ros website instructions on creating a package. 
+2. Add a folder called 'scripts' in the package folder and save the publisher/subscriber code you create for running the node in it. An example of simple subscriber is our rgb_view_node.py written in python.
+3. Navigate to src/iai_kinect2/iai_kinect2 and open package.xml in gedit. Add the run depend for the new package like '<run_depend>Name_of_package</run_depend>' and save.
+4. Run catkin make to build the new workspace.
 
 
