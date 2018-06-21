@@ -1,0 +1,8 @@
+prefix=/home/inderjeet/catkin_ws/devel
+
+Name: rgb_view_node_036799143547
+Description: Description of rgb_view_node_036799143547
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/inderjeet/catkin_ws/devel/lib 
+Requires: 

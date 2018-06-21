@@ -1,0 +1,8 @@
+prefix=/home/inderjeet/catkin_ws/install
+
+Name: rgb_view_node
+Description: Description of rgb_view_node
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/inderjeet/catkin_ws/install/lib 
+Requires: 

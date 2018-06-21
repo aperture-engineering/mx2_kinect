@@ -1,0 +1,2 @@
+iai_kinect2/iai_kinect2:iai_kinect2/kinect2_bridge:iai_kinect2/kinect2_calibration:iai_kinect2/kinect2_registration:iai_kinect2/kinect2_viewer:iai_kinect2/rgb_view_node:iai_kinect2/rgb_view_node_036799143547:iai_kinect2/rgb_view_node_153095534147
+-DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/inderjeet/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/inderjeet/catkin_ws/install -G Unix Makefiles
