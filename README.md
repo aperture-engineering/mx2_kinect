@@ -45,6 +45,7 @@ do `rostopic list` to see full list of topics.
 If changing `image_throttle` to something else, make sure to change it in 'rgb_view_node.py'.
 
 ## Adding more kinect2 cameras
+Please note that you will need a separate USB 3.0 bus for each added camera.
 
 **1. Find serial number of device**
 
