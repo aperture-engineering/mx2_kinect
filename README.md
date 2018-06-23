@@ -13,7 +13,7 @@ Depends:
 
 ## Starting an image stream
 
-1. **Kinect2 Bridges**
+**1. Kinect2 Bridges**
 
 ```
 roslaunch kinect2_bridge kinect2_bridge + TAB
@@ -25,7 +25,7 @@ The bridge prints a line like `[ INFO] [1528197831.998402494]: [Kinect2Bridge::i
 
 Must run the bridge to start using the kinect2 for anything.
 
-2. Image stream
+**2. Image stream**
 
 ```
 rosrun rgb_view_node rgb_view_node.py
@@ -33,7 +33,7 @@ rosrun rgb_view_node rgb_view_node.py
 
 Saves image data into a bag which can be accessed later. If you have created a package node with different names then you need to run yours.
 
-3. Change publish speed of any topic
+**3. Change publish speed of any topic**
 
 e.g. To publish SD quality colour images at 20Hz:
 
@@ -46,7 +46,7 @@ If changing `image_throttle` to something else, make sure to change it in 'rgb_v
 
 ## Adding more kinect2 cameras
 
-1. Find serial number of device
+**1. Find serial number of device**
 
 - Check the barcode on the kinect2 camera for the device serial.
 
@@ -54,7 +54,7 @@ If changing `image_throttle` to something else, make sure to change it in 'rgb_v
 
 If not calibrating the camera, copy the calibration files from one of the other folders into it. The calibration won't be as good though.
 
-2.  Create new bridge launch files for multiple kinects
+**2.  Create new bridge launch files for multiple kinects**
 
 - go to '/catkin_ws/src/iai_kinect2/kinect2_bridge/launch' and duplicate one of the current launch files and append the name with the new kinect's serial number e.g. "kinect2_bridge_serial-number.launch"
 
