@@ -42,7 +42,7 @@ rosrun topic_tools throttle messages /kinect2/sd/image_color_rect 20 image_throt
 ```
 
 do `rostopic list` to see full list of topics. 
-If changing `image_throttle` to something else, make sure to change it in 'rgb_view_node.py'.
+If using this, make sure to adjust the 'rgb_view_node.py' (or whatever node which subscribes to these images) to receive messages from this 'image_throttle' node instead of the camera topic directly.
 
 ## Adding more kinect2 cameras
 Please note that you will need a separate USB 3.0 bus for each added camera.
