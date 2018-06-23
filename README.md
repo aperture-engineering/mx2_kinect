@@ -56,7 +56,7 @@ If not calibrating the camera, copy the calibration files from one of the other 
 
 2.  Create new bridge launch files for multiple kinects
 
-- go to '/catkin_ws/src/iai_kinect2/kinect2_bridge/launch' and duplicate one of the current launch files and append the name with the new kinect's serial number e.g. "kinect2_bridge_<serial-number>.launch"
+- go to '/catkin_ws/src/iai_kinect2/kinect2_bridge/launch' and duplicate one of the current launch files and append the name with the new kinect's serial number e.g. "kinect2_bridge_serial-number.launch"
 
 - Open the file and change the <serial-number> to the new one at:
 
