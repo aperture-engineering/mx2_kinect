@@ -1,6 +1,6 @@
 # Aperture Engineering Kinect2 Camera project
 
-This repository contains Aperture Engineering's UTS MMD spring Autumn 2018 software.
+This repository contains Aperture Engineering's UTS MMD Autumn 2018 software.
 
 Depends:
 - Ubuntu (we used 16.06)
@@ -8,7 +8,7 @@ Depends:
 - IAI Kinect2: https://github.com/code-iai/iai_kinect2
 
 ## Notes
-- Put `source /home/user/catkin_ws/devel/setup.bash` in your bashrc, replacing 'user' with urs.
+- Put `source /home/user/catkin_ws/devel/setup.bash` in your bashrc, replacing 'user' with yours.
 - Remember to run `catkin_make -DCMAKE_BUILD_TYPE=Release` after any structural changes to the workspace
 
 ## Starting an image stream
