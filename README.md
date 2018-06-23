@@ -60,9 +60,9 @@ If not calibrating the camera, copy the calibration files from one of the other 
 
 - Open the file and change the serial-number inside to the new one at:
 
-`<arg name="base_name"         default="kinect2_<serial-number>"/>`
+`<arg name="base_name"         default="kinect2_serial-number"/>`
 and 
-`<arg name="sensor"            default="<serial-number>"/>`
+`<arg name="sensor"            default=serial-number/>`
 
 - You may now run the new bridge using the instructions in 'starting an image stream'
 
