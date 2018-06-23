@@ -21,9 +21,9 @@ roslaunch kinect2_bridge kinect2_bridge + TAB
 
 TAB to pick the correct device serial, make sure the correct kinect camera is connected if trying to run the bridge for that device. You need to run separate bridges for each camera. If you need to add a new camera follow the 'Adding more kinect2 cameras' instructions below.
 
-The bridge print a line like `[ INFO] [1528197831.998402494]: [Kinect2Bridge::initDevice]   1: <your-chosen-serial-number> (selected)`.
+The bridge prints a line like `[ INFO] [1528197831.998402494]: [Kinect2Bridge::initDevice]   1: <your-chosen-serial-number> (selected)`.
 
-Must run bridge to start using the kinect2 for anything.
+Must run the bridge to start using the kinect2 for anything.
 
 2. Image stream
 
